@@ -1,0 +1,211 @@
+
+@charset"utf-8";
+
+/* 全体定義 */
+
+    *{
+    box-sizing: border-box;
+    max-width:  100%;
+    height: auto;
+    }
+
+
+/* ヘッダー */
+
+    .header{
+    display: flex;
+    justify-content: center;
+    font-size: 21px ;
+    align-items: center;
+    color: #666666;    
+    }
+
+
+/*  content */
+
+    section{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    font-size: 21px ;
+    align-items: center;
+    /* color: #666666; */
+    }
+
+/* 咲丸 1歳4か月のところ */
+    .contents{  
+    padding-top: 10px; 
+    max-width: 80% ;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: solid 3px #F6275C;
+    }
+
+
+    .prof img{
+        /* プロフ 丸写真化 */
+    border-radius: 100px;
+    -moz-border-image:150px;
+    -webkit-border-image:150px;
+
+    }
+
+/* 咲く丸のところここまで */
+
+    .contents h2{
+    background-color: #F6275C;
+    color: white;   
+    font-size: 25px ; 
+    margin-left: 50px;
+    }
+
+
+/* select.phpの画像部分 目標は、Instagram風！ */
+/* PHPにDIVをつけて、直接CSSをかけるのと、HTMLのDIVにかけるのと混乱中… */
+
+    .contents2{
+    border-top: solid 3px #F6275C;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 470px;
+    }
+
+      .result{ 
+      color: #000;
+      width: 250px;
+      height: 250px;
+      } 
+      
+/* 質問！画像サイズの変更がかからない！！文字位置は問題なさそう？困った！ */
+/* CSSでインスタ風画像を編集したいのですが…？？.sakuimg .imginfo .view img  */
+
+  .sakuimg {
+    width: 200px ;
+    height: 200px ;
+    position: relative;
+    padding: 10px;
+    }
+
+    .sakuimg p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    font-size: 18px;
+  
+    }
+
+/* form  */
+
+    form{
+    width:500px;
+    margin:0 auto;
+    }
+
+    .formbox{
+    text-align: center;
+    margin: 20px; 
+    border-top: solid 3px #F6275C;
+    }
+
+
+    .item{
+    padding-top: 20px; 
+    overflow: hidden;
+    margin-bottom: 20px;
+    }
+
+    .label{
+    float: left;
+    margin-right: 20px;
+    width:135px;
+    color: #000;
+    border-left: solid 3px #F6275C;
+    padding-left: 10px;
+    }
+  
+    .inputs{
+    float: left;
+    width:300px;
+    text-align: center;
+    padding:10px;
+    font-size: 15px;
+    }
+
+    input[type="text"],input[type="email"]{
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding:10px;
+    font-size: 15px;
+    text-align: center;
+    }
+
+    textarea{
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding: 10px;
+    height: 160px;
+    font-size: 15px;
+    }
+
+
+    .btn-area{
+    text-align: center;
+    }
+
+    input[type="submit"]{
+    background: #F6275C;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+    }
+
+    input[type="reset"]{
+    background: #aaa;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+    }
+
+
+/* 送信ボタン *//* CONTACT ここまで */
+
+/* #footer */
+
+    footer{
+    width:auto;
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center ;
+    width: 100%;
+    }
+
+
+    .footer2 nav{
+    padding-top: 30px; 
+    width: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: solid 3px #F6275C;
+    }
+
+/* #footerここまで */
